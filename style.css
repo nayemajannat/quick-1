@@ -1,0 +1,191 @@
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  /* header styles */
+  header {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar img {
+    height: 50px;
+  }
+  .navbar img:hover{
+    cursor: pointer;
+  }
+  .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .menu li a {
+    text-decoration: none;
+  }
+  .menu li a:hover{
+    color: red;
+  }
+  hr {
+    height: 2px;
+    border: none;
+    background-color: #f3f3f3;
+  }
+  
+  /* banner styles */
+  .banner {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 60px;
+  }
+  .text-1 {
+    color: #0f2656;
+  }
+  .text-2 {
+    color: #008aff;
+  }
+  .banner-description {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* projects & ideas styles */
+  .projects {
+    display: flex;
+    gap: 30px;
+    margin-top: 80px;
+  }
+  .projects-desc {
+    width: 50%;
+    text-align: right;
+  }
+  .projects-desc h1 {
+    font-size: 60px;
+    color: #f15767;
+  }
+  .project-title {
+    width: 50%;
+  }
+  .project-title h1 {
+    font-size: 40px;
+    color: #0f2656;
+  }
+  
+  /* creativity card styles  */
+  .creativity {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  .card {
+    width: 30%;
+  }
+  .card img {
+    width: 100%;
+  }
+  .card h3 {
+    margin: 10px 15px;
+  }
+  .card p {
+    margin: 0 15px;
+    padding-bottom: 40px;
+  }
+  
+  .card-1 {
+    background-color: #fdebed;
+  }
+  
+  .card-2 {
+    background-color: #ebf9f4;
+  }
+  
+  .card-3 {
+    background-color: #fff7e8;
+  }
+  
+  /* footer styles */
+  .footer {
+    height: 100px;
+    background-color: #008aff;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer p {
+    color: wheat;
+  }
+  .footer p span {
+    color: white;
+  }
+  
+  /* responsive */
+  @media only screen and (max-width: 576px) {
+    /* header */
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 10px;
+    }
+  
+    /* banner */
+    .banner {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .banner-title {
+      font-size: 30px;
+    }
+    .banner img{
+      width: 90%;
+    }
+  
+    /* projects */
+    .projects {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 20px;
+    }
+    .project-title {
+      width: 100%;
+      text-align: center;
+    }
+    .project-title h1{
+      font-size: 30px;
+    }
+    .projects-desc {
+      width: 100%;
+      text-align: center;
+    }
+    .projects-desc h1 {
+      font-size: 30px;
+    }
+  
+    /* creativity */
+    .creativity {
+      display: flex;
+      flex-direction: column;
+      margin-top:20px;
+    }
+    .card {
+      width: 100%;
+    }
+  
+    /* footer */
+    .footer {
+      margin-top:20px;
+      text-align: center;
+    }
+  }
